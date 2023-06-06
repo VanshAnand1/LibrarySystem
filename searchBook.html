@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--this links the css file to this file-->
+<link rel="stylesheet" type="text/css" href="librarysystem.css" />
+<!--this links the javascript file to this file-->
+<script src="searchBook.js"></script>
+
+<head>
+  <!--the title for the page-->
+  <title>Search for a Book</title>
+</head>
+
+<body class="backgrounds">
+  <!--header at the top of the page-->
+  <rect class="toprect"></rect>
+  <h2 class="searchtoptext">
+    Input the information to search for a Book
+  </h2>
+  <!--information for the book which will be searched for-->
+  <div class="studentsearchbook">
+    <form>
+      <!--getting the book title from the student for the search-->
+      Book Title:
+      <input type="text" size="40" placeholder="ex. The very hungry caterpillar" name="bookTitleS" id="bookTitleS" />
+      <br />
+      <br />
+
+      <!--getting the book number from the student for the search-->
+      Book Number:
+      <input type="text" placeholder="ex. 800626" name="bookNumS" id="bookNumS" />
+      <br />
+      <br />
+
+      <!--getting the author name from the student for the search-->
+      Author Name:
+      <input type="text" placeholder="ex. J.K. Rowling" name="bookAuthorS" id="bookAuthorS" />
+      <br />
+      <br />
+
+      <!--getting the book type from the student for the search, these are checkboxes so the student can select multiple responses-->
+      Book Type:
+      <br />
+      <div class="typesearch">
+        <!--fiction option-->
+        <input type="checkbox" id="booktype" name="bookTypeFS" value="fiction" id="bookTypeFS" />
+        <label for="fiction">Fiction</label>
+        <br />
+
+        <!--non-fiction option-->
+        <input type="checkbox" id="booktype" name="bookTypeNFS" value="non-fiction" id="bookTypeNFS" />
+        <label for="NonFiction">Non-Fiction</label>
+        <br />
+
+        <!--graphic novel option-->
+        <input type="checkbox" id="booktype" name="bookTypeGNS" value="graphic-novel" id="bookTypeGNS" />
+        <label for="graphic-novel">Graphic Novel</label>
+      </div>
+      <br />
+
+      <!--getting the publication date from the student for the search, there is an empty option which is just any year-->
+      Publication Date:
+      <select name="bookPubDateS" id="bookPubDateS">
+        <option value="ANY">ANY</option>
+        <option>Before 2000</option>
+        <option>2001-2005</option>
+        <option>2006-2010</option>
+        <option>2011-2015</option>
+        <option>2016-2020</option>
+        <option>2021-2025</option>
+      </select>
+      <br />
+      <br />
+
+      <!--getting the genre from the student for the search, there is an empty option which is just any genre-->
+      Genre:
+      <select name="bookGenreS" id="bookGenreS">
+        <option>ANY</option>
+        <option>Comedy</option>
+        <option>Action</option>
+        <option>Horror</option>
+      </select>
+      <br />
+      <hr>
+
+      <!--button to cancel the request and return back to the student homepage-->
+      <a href="studentHomepage.html"><button class="searchcancel" type="button" value="cancelrequest" onclick="">Cancel
+          Request</button></a>
+
+      <!--button to submit the search and go to the search results page-->
+      <a href="searchResults.html"><button class="submitsearch" onclick="getStudentSearchData(this.form);"
+          type="button">Search</button></a>
+    </form>
+  </div>
+  <!--logout and homepage buttons-->
+  <div class="logout">
+    <a class="lgbutton" href="loginPage.html" value="Logout">Logout</a>
+  </div>
+  <div class="homepage">
+    <a class="hpbutton" href="studentHomepage.html" value="Homepage">Homepage</a>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--this links the css file to this file-->
+<link rel="stylesheet" type="text/css" href="librarysystem.css" />
+<!--this links the javascript file to this file-->
+<script src="returnBook.js"></script>
+
+<head>
+  <!--the title for the page-->
+  <title>Return a book to the system</title>
+</head>
+
+<body class="backgrounds">
+  <!--the page header at the top-->
+  <rect class="toprect"></rect>
+  <h2 class="returntoptext">
+    Input the Information to Return a Book
+  </h2>
+  <!--return a book-->
+  <div class="techaddform">
+    <form>
+      <!--getting the book number for the book to be returned-->
+      Book Number:
+      <input type="text" placeholder="ex. 800626" name="returnBookNum" id="returnBookNum" required />
+      <br />
+      <br />
+
+      <!--button to cancel the request and return back to the homepage-->
+      <a href="techHomepage.html"><button type="button" value="cancelrequest">Return</button></a>
+
+      <!--button to submit the request and return the book-->
+      <a><button type="button" onclick="returnBook(this.form)" value="returnbook">Return
+          Book</button></a>
+    </form>
+  </div>
+  <!--logout and homepage buttons-->
+  <div class="logout">
+    <a class="lgbutton" href="loginPage.html" value="Logout">Logout</a>
+  </div>
+  <div class="homepage">
+    <a class="hpbutton" href="techHomepage.html" value="Homepage">Homepage</a>
+  </div>
+</body>
+
+</html>

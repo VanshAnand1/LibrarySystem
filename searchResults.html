@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--this links the css file to this file-->
+<link rel="stylesheet" type="text/css" href="librarysystem.css" />
+<!--this links the javascript file to this file-->
+<script src="searchResults.js"></script>
+
+<head>
+  <!--this is the title for the page-->
+  <title>Search Results</title>
+</head>
+
+<!--displaying the results from the search-->
+
+<body onload="displayFinalResults();" class="searchresultsbg">
+
+  <!--the header at the top of the page-->
+  <rect class="toprect"></rect>
+  <h2 class="resultstoptext">
+    Here are the results from your search
+  </h2>
+  <h2 class="resultstoptextcounter" id="header">
+    <!-- Here are the results from your search -->
+  </h2>
+  <!--logout and homepage buttons-->
+  <div class="logout">
+    <a class="lgbutton" href="loginPage.html" value="Logout">Logout</a>
+  </div>
+  <div class="homepage">
+    <a class="hpbutton" href="studentHomepage.html" value="Homepage">Homepage</a>
+  </div>
+  <!--displaying results from the search-->
+  <div class="addform">
+    <table class="displayResults" id="displayResults"></table>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--this the title for the page-->
+  <title>Add a new book to the system</title>
+  <!--this links the css file to this file-->
+  <link rel="stylesheet" type="text/css" href="librarysystem.css">
+  <!--this links the javascript file to this file-->
+  <script src="addBook.js"></script>
+</head>
+
+<body class="backgrounds" onload="savingBooks();">
+  <rect class="toprect"></rect>
+  <!--this is the header at the top of the page-->
+  <h2 class="addtoptext">
+    Input the information to add a new book to the system
+  </h2>
+  <!--taking information for the books which will be added-->
+  <form class="techaddbook" id="addBook">
+    <!--getting the book title from the library technician-->
+    <p>Book Title: <br><input type="text" class="inputs" placeholder="ex. The very hungry caterpillar" name="bookTitleL"
+        id="bookTitleL" required /></p>
+
+    <!--getting the book number from the library technician-->
+    <p>Book Number: <br><input type="number" class="inputs" placeholder="ex. 5" name="bookNumL" id="bookNumL"
+        required /></p>
+
+    <!--getting the author name from the library technician-->
+    <p>Author Name: <br><input type="text" class="inputs" placeholder="ex. J.K. Rowling" name="authorL" id="bookAuthorL"
+        required />
+    </p>
+
+    <!--getting the publication date of the book from the library technician-->
+    <div>
+      <p>Publication Date: <br>
+        <select class="pubdate" id="bookPubDateL" name="bookPubDateL" required>
+          <option>Before 2000</option>
+          <option>2001-2005</option>
+          <option>2006-2010</option>
+          <option>2011-2015</option>
+          <option>2016-2020</option>
+          <option>2021-2025</option>
+        </select>
+      </p>
+
+      <!--getting the book genre from the library technician-->
+      <p>Genre: <br>
+        <select id="bookGenreL" name="bookGenreL" required>
+          <option>Comedy</option>
+          <option>Action</option>
+          <option>Horror</option>
+        </select>
+      </p>
+    </div>
+
+    <!--getting the book type from the library tecnician, these are radio buttons, which means that only one can be selected-->
+    <div class="typeadd" required>
+      <p>Book Type:
+        <br>
+        <!--fiction option-->
+        <input type="radio" name="bookTypeL" id="bookTypeL" value="fiction" required />
+        <label for="fiction">Fiction</label>
+        <br />
+
+        <!--non-fiction option-->
+        <input type="radio" name="bookTypeL" id="bookTypeL" value="non-fiction" required />
+        <label for="NonFiction">Non-Fiction</label>
+        <br />
+
+        <!--grahpic novel option-->
+        <input type="radio" name="bookTypeL" id="bookTypeL" value="graphic-novel" required />
+        <label for="graphic-novel">Graphic Novel</label>
+    </div>
+    </p>
+
+    <div>
+      <!--non funcitonal - taking a picture of the book cover from the library tecnician-->
+      <input class="addbookcover" type="file" accept="image/*" name="bookCoverL" />
+      <img class="bookcoverbackgroundimage"
+        src="https://keithrosen.com/wp-content/uploads/2014/07/Blank-red-book-cover-question-mark.png">
+    </div>
+
+    <!--button to cancel the adding, and return back to the homepage-->
+    <a href="techHomepage.html"><button class="canceladdrequest" type="button" value="cancelrequest">Return</button></a>
+
+    <!--button to add the book-->
+    <button class="addbookbutton" type="button" value="addbook" onclick="addNewBook(this.form)">Add
+      Book</button>
+  </form>
+
+  <!--logout and homepage buttons-->
+  <div class="logout">
+    <a class="lgbutton" href="loginPage.html" value="Logout">Logout</a>
+  </div>
+  <div class="homepage">
+    <a class="hpbutton" href="techHomepage.html" value="Homepage">Homepage</a>
+  </div>
+</body>
+
+</html>

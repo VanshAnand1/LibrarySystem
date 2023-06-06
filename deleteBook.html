@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--this links the css file to this file-->
+<link rel="stylesheet" type="text/css" href="librarysystem.css" />
+<!--this links the javascript file to this file-->
+<script src="deleteBook.js"></script>
+
+<head>
+  <!--this the title for the page-->
+  <title>Delete a book from the system</title>
+</head>
+
+<body class="backgrounds">
+  <!--this is the header at the top of the page-->
+  <rect class="toprect"></rect>
+  <h2 class="deletetoptext">
+    Input the information to delete a book from the system
+  </h2>
+  <!--delete a book-->
+  <form class="techaddform" id="deleteform">
+    <!--getting the book number from the library technician for the book to be deleted-->
+    Book Number:
+    <input type="text" placeholder="ex. 800626" name="deleteBookNum" id="deleteBookNum" required />
+    <br />
+    <br />
+
+    <!--button to cancel the request and return to the homepage-->
+    <a href="techHomepage.html"><button type="button" value="cancelrequest">Return</button></a>
+
+    <!--button to submit the request and delete the book-->
+    <a><button type="button" onclick="deleteBook(this.form)" value="deletebook">Delete
+        Book</button></a>
+  </form>
+
+  <!--logout and homepage buttons-->
+  <div class="logout">
+    <a class="lgbutton" href="loginPage.html" value="Logout">Logout</a>
+  </div>
+  <div class="homepage">
+    <a class="hpbutton" href="techHomepage.html" value="Homepage">Homepage</a>
+  </div>
+</body>
+
+</html>

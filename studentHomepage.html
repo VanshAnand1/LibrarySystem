@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--this links the css file to this file-->
+<link rel="stylesheet" type="text/css" href="librarysystem.css" />
+<!--this links the javascript file to this file-->
+<script src="studentHomepage.js"></script>
+
+<head>
+  <!--this is the title for the page-->
+  <title>Student Homepage</title>
+</head>
+
+<!--displaying the student username in the profile section-->
+
+<body onload="studentUsernameDisplaying();" class="techhp">
+
+  <!--header at the top of the page-->
+  <rect class="toprect"></rect>
+  <h2 class="studtoptext" id="studentUsernameDisplaying">
+  </h2>
+
+  <!--Search book button-->
+  <div class="addform">
+    <a href="searchBook.html"><button type="button" class="searchbook bigbuttondesign" value="searchbook">Search for a
+        book</button></a>
+  </div>
+  <!--student profile-->
+  <rect class="studprofile">
+    <p class="studentprofiletitle" align="center">Student Profile</p>
+    <p class="studentprofile" align="center">
+      <!--overdue books-->
+      Overdue Books:
+      <br>
+      <br>
+      <br>
+      <!--fees owed-->
+      Fees Owed:
+    </p>
+  </rect>
+  <!--logout button-->
+  <div class="logout">
+    <a class="lgbutton" href="loginPage.html" value="Logout">Logout</a>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--this links the css file to this file-->
+<link rel="stylesheet" type="text/css" href="librarysystem.css" />
+
+<!--this links the javascript file to this file-->
+<script src="loginPage.js"></script>
+
+<head>
+  <!--this is the title of the page-->
+  <title>Log in to the Library System</title>
+</head>
+
+<body class="login">
+  <!--this is the header at the top of the page-->
+  <div class="logintoprect"></div>
+  <h2 class="logintoptext">
+    <strong>Input the Information to Log in to the Library System</strong>
+  </h2>
+
+  <!--Text inputs for the logins -->
+  <!--student login-->
+  <h2 class="studentheader">STUDENT</h2>
+  <form id="studentUsernameForm" name="studentUsernameForm">
+    <div class="stuloginbackgroundrect">
+      <div class="stulogin">
+        <!--student username input-->
+        <p><strong>Username: </strong><br> <input type="text" placeholder=" ex. 800626" class="stuusername"
+            id="studentUsername" name="studentUsername"></p>
+        <!--student password input-->
+        <p><strong>Password: </strong><br><input type="password" placeholder=" ex. johnnypizza41" class="stupassword"
+            id="studentPassword" name="studentPassword">
+      </div>
+    </div>
+    <!--student submit login button-->
+    <button type="button" value="studentlogin" class="studentsubmitlogin"
+      onclick="loginStudentSide(this.form);">Login</button>
+  </form>
+  </p>
+
+  <!--technician login-->
+  <h2 class="techheader">TECHNICIAN</h2>
+  <form>
+    <div class="techloginbackgroundrect">
+      <div class="techlogin">
+        <!--technician username input-->
+        <p><strong>Username: </strong><br><input type="text" placeholder=" ex. 800626" class="techusername"
+            id="technicianUsername" name="technicianUsername"></p>
+        <!--technician password input-->
+        <p><strong>Password: </strong><input type="password" placeholder=" ex. johnnypizza41" class="techpassword"
+            id="technicianPassword" name="technicianPassword">></p>
+      </div>
+    </div>
+    <!--tech login button-->
+    <button type="button" value="technicianlogin" class="techsubmitlogin" onclick="loginTechnicianSide(this.form);">
+      Login</button>
+  </form>
+  </div>
+
+  <!--North Park Logo-->
+  <div>
+    <img src="https://www.ncaa.com/sites/default/files/images/logos/schools/bgd/north-park.svg" class="nplogo" />
+    <br />
+
+</body>
+
+</html>
