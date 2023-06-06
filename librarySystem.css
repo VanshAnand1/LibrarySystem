@@ -386,7 +386,7 @@
     width: 200px;
     height: 40px;
     top: 610px;
-    left: 340px;
+    left: 80px;
 }
 
 .addbookbutton {
@@ -394,7 +394,7 @@
     width: 200px;
     height: 40px;
     top: 610px;
-    left: 80px;
+    left: 340px;
 }
 
 /* Delete a Book */
