@@ -23,7 +23,7 @@ var table = "<table style='border-collapse: collapse; width: 100%;'>";
 
 //variable to count the number of results found
 var resultsCounter = 0;
-//a
+
 //function to display the results from the search, runs when the searchresults page is loaded
 function displayFinalResults() {
     //the variables for the library technicians book that is already in the system being given the values that are assigned to the keys in the local storage
