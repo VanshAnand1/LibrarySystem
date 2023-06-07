@@ -100,9 +100,10 @@ function displayFinalResults() {
 
         //displaying the number of results found in the corner of the page
         document.getElementById("header").innerHTML = `${resultsCounter} Results Found`
+    }
 
-    } else {
-        //if no results are found, it will display this instead
-        document.getElementById("header").innerHTML = "No Results Found";
+    //if no results are found, the user is directed to the no results found page
+    if (resultsCounter == 0) {
+        window.location.href = "noResults.html"
     }
 }

@@ -10,6 +10,7 @@ function checkoutBook(checkoutBookForm) {
     bookNumLib = JSON.parse(localStorage.getItem('libTechNumKey'));//getting the book number values from the localstorage and parsing it
     availability = JSON.parse(localStorage.getItem('availabilityKey'));//getting the book availability values from the localstorage and parsing it
 
+    //making sure that the system is not empty
     if (bookNumLib != null) {
         //looping for the amount of books that there are in the system
         for (x = 0; x < bookNumLib.length; x = x + 1) {

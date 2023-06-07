@@ -1,8 +1,8 @@
 //variables for the accounts that are created and saved in the system
-var studentExistingUsernames = ["1", "vansh", "ayaan", "parth", "raeid", "imaan"];
-var studentExistingPasswords = ["1", "Vansh123", "Ayaan123", "Parth123", "Raeid123", "Imaan123"];
-var technicianExistingUsernames = ["1", "vansh"];
-var technicianExistingPasswords = ["1", "Vansh123"];
+var studentExistingUsernames = ["1", "Admin", "vansh", "ayaan", "parth", "raeid", "imaan"];
+var studentExistingPasswords = ["1", "Admin", "Vansh123", "Ayaan123", "Parth123", "Raeid123", "Imaan123"];
+var technicianExistingUsernames = ["1", "Admin", "vansh"];
+var technicianExistingPasswords = ["1", "Admin", "Vansh123"];
 
 //defining the variables for the login information
 var studentUsername;

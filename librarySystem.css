@@ -461,15 +461,6 @@
     padding: 15px;
 }
 
-.searchagain {
-    position: absolute;
-    top: 500px;
-    left: 730px;
-    width: 400px;
-    height: 160px;
-    font-size: 50px;
-}
-
 .typesearch {
     position: relative;
     text-align: left;
@@ -562,19 +553,42 @@
 }
 
 /* No Results Found */
+.noresultstoptext {
+    z-index: 2;
+    position: absolute;
+    font-weight: 800;
+    text-align: center;
+    top: -10px;
+    left: 42%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 0.5px 1px black;
+    font-size: 44px;
+}
 
 .frown {
+    position: absolute;
     width: 200px;
     border-radius: 300px;
     float: left;
-    margin-left: 250px;
-    margin-top: 125px
+    left: 760px;
+    top: 200px
 }
 
 .sorry {
-    margin: 200px;
+    position: absolute;
+    left: 350px;
+    top: 60px;
     display: inline-block;
-    margin-right: 200px;
+}
+
+.searchagain {
+    position: absolute;
+    top: 500px;
+    left: 670px;
+    width: 400px;
+    height: 160px;
+    font-size: 50px;
 }
 
 /* */
