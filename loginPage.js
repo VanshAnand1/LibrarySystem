@@ -13,22 +13,27 @@ var technicianPassword;
 //variable to detect if the information inputted is incorrect
 var number = 0;
 
-//function to take the student username and display it on the student profile
+//function for the student login
 function loginStudentSide(studentLoginForm) {
     //reassigning the variable to the inputted value
     studentUsername = studentLoginForm.studentUsername.value;
     studentPassword = studentLoginForm.studentPassword.value;
 
-    //storing the variable in the localstorage to display on the homepage
+    //storing the variable in the localstorage to pull and display on the homepage
     localStorage.setItem("studentUsernameKey", studentUsername);
 
     //checking if the inputs are empty
     if (studentUsername != '' && studentPassword != '') {
         for (x = 0; x < studentExistingUsernames.length; x = x + 1) {
             if (studentUsername == studentExistingUsernames[x] && studentPassword == studentExistingPasswords[x]) {
-                alert("Login Successful!")
-                number = number + 1;
+                //let user know the login was successful
+                alert("Login Successful!");
+
+                //redirect user to the homepage
                 window.location.href = 'studentHomepage.html';
+
+                //add one to temp counter variable
+                number = number + 1;
             }
         }
     } else if (studentUsername === '' || studentPassword === '') {
@@ -42,7 +47,7 @@ function loginStudentSide(studentLoginForm) {
     }
 }
 
-
+//function for the technician login
 function loginTechnicianSide(technicianLoginForm) {
     //reassigning the variable to the inputted value
     technicianUsername = technicianLoginForm.technicianUsername.value;
@@ -52,8 +57,13 @@ function loginTechnicianSide(technicianLoginForm) {
     if (technicianUsername != '' && technicianPassword != '') {
         for (x = 0; x < technicianExistingUsernames.length; x = x + 1) {
             if (technicianUsername == technicianExistingUsernames[x] && technicianPassword == technicianExistingPasswords[x]) {
-                alert("Login Successful!")
+                //let user know the login was successful
+                alert("Login Successful!");
+
+                //redirect user to the homepage
                 window.location.href = 'techHomepage.html';
+
+                //add one to temp counter variable
                 number = number + 1;
             }
         }

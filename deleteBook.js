@@ -49,7 +49,7 @@ function deleteBook(deleteBookForm) {
                     localStorage.setItem("libTechGenreKey", JSON.stringify(bookGenreLib));//genre
                     localStorage.setItem("availabilityKey", JSON.stringify(availability));//availability
                 } else {
-                    //if only one item is in the localstorage and it is to be deleted, it will just clear the storage
+                    //if only one item is currently in the localstorage and it is to be deleted, it will just clear the storage for these keys
                     localStorage.clear("libTechTitleKey");//clearing last item: title
                     localStorage.clear("libTechNumKey");//clearing last item: number
                     localStorage.clear("libTechAuthorKey");//clearing last item: author

@@ -47,9 +47,9 @@ function displayFinalResults() {
     bookPubDateStudent = localStorage.getItem("studentPubKey");//getting the book publication date search value from the localstorage
 
     //if no book type is specified, the value will be set to ANY book type
-    if (bookTypeStudentF == false &&
-        bookTypeStudentNF == false &&
-        bookTypeStudentGN == false) {
+    if (bookTypeStudentF == 'false' &&
+        bookTypeStudentNF == 'false' &&
+        bookTypeStudentGN == 'false') {
         bookTypeStudent = 'ANY';
     }
 
