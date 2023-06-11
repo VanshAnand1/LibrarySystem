@@ -571,13 +571,13 @@
     width: 200px;
     border-radius: 300px;
     float: left;
-    left: 760px;
+    left: 850px;
     top: 200px
 }
 
 .sorry {
     position: absolute;
-    left: 350px;
+    left: 400px;
     top: 60px;
     display: inline-block;
 }
@@ -585,7 +585,7 @@
 .searchagain {
     position: absolute;
     top: 500px;
-    left: 670px;
+    left: 760px;
     width: 400px;
     height: 160px;
     font-size: 50px;

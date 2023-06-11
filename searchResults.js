@@ -61,7 +61,8 @@ function displayFinalResults() {
         //for loop to check through the array of book values we have stored in the local storage
         for (x = 0; x < bookNumLib.length; x = x + 1) {
             //this if the IF statement for the search results to be displayed depending on the search inputs put in by the student
-            //if any of the values comparing match, the result will be displayed, and if nothing is matched in that field, it will check if it was left empty, and if it was, it will ignore it and move on
+            //if any of the values comparing match, the result will be displayed
+            //if nothing is matched in that field, it will check if it was left empty, and if it was, it will ignore it and move on
             if ((bookTitleLib[x] === bookTitleStudent || bookTitleStudent == '') &&
                 (bookNumLib[x] === bookNumStudent || bookNumStudent == '') &&
                 (bookAuthorLib[x] === bookAuthorStudent || bookAuthorStudent == '') &&
